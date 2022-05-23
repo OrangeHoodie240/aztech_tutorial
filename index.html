@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .subject img {
+            width: 700px; 
+            height: auto;
+        }
+
+        main {
+            width: 60vw; 
+            margin-left: 20vw;
+            margin-right: 20vw;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+
+        .subject {
+            border-bottom: solid 1px black; 
+            margin-bottom: 10vh;
+        }
+        .subject p{
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div>
+            <ul>
+                <li><a href="#changing_your_own_password">Changing Your Own Password</a></li>
+                <li><a href="#changing_a_customers_password">Changing A Customer's Password</a></li>
+                <li><a href="#create_user">Creating A User</a></li>
+                <li><a href="#inspect_user_by_account">Inspect User By Account</a></li>
+                <li><a href="#inspect_user_by_customer_number">Inspect User By Customer Number</a></li>
+                <li><a href="#navigating_an_inspected_user">Navigating An Inspected User</a></li>
+                <li><a href="#finding_a_users_certificates">Finding A User's Certificates</a></li>
+                <li><a href="#exiting_user_inspection">Exiting User Inspection</a></li>
+
+                
+                
+            </ul>
+        </div>
+
+
+
+        <div id="changing_your_own_password" class="subject"><h2>Changing Your Own Password</h2>
+                <img src="./change_own_password_button.png" />
+                <br />
+                <p>
+                    Find and click the change password button in the top right corner of the screen.
+                </p>
+                <p>
+                    After you click on it, the button will change to say "Hide Form", which when clicked 
+                    will hide the form from view.
+                </p> 
+
+                <br />
+                <br />
+
+                <img src="./change_own_password_form.png" />
+                <br />
+                 <p>Fill out the form and submit.</p>
+    
+                <br />
+                <br />
+    
+        </div>
+        <div id="changing_a_customers_password" class="subject"><h2>Changing A Customers Password</h2>
+            <img src="./admin_change_pass_for_client.png" />
+            <br />
+            <p>
+                Locating the change customer password section, enter the client's username and click the buttom.
+            </p>
+            <p>
+                You will soon receive a randomized password in green text. This is a temp password to be given to the 
+                user. <em>The user should be instructed to change this randomized password once they log in.</em>
+            </p> 
+
+            <br />
+            <br />
+
+    </div>
+        <div id="create_user" class="subject">
+            <h2>Creating A User</h2>
+
+            <img src="./click_create_user.png">
+            <br /> 
+            <p>Find the create user button in the top right of the screen.</p>
+            <p>After clicking the button text will change to "Hide Form", which when clicked again, will hide the form.</p>
+
+            <br /> 
+            <br /> 
+
+            <img src="./blank_create_user_form.png">
+            <br /> 
+            <p>Fill out the information for the user</p>
+            <p>Be sure to check the admin check box if the user is to be an admin.</p>
+
+            <br /> 
+            <br /> 
+
+
+            <img src="./created_new_user_showing_temp_pass.png">
+            <br>
+            <p>
+                After successful user creation, a temporary password will be displayed in a green font. 
+                This is a randomally generated password that is to be given to the user. <em>They should be 
+                instructed to change this password when they log in</em>.
+            </p>
+
+
+        </div>
+
+        <div class="subject" id="inspect_user_by_account">
+            <h2>Inspect User By Account</h2>
+            
+            <p>This method can only be used to inspect users that have an account. If a user does not have an account, 
+                can always <a href="#inspect_user_by_customer_number">inspect by their customer number</a>
+            </p>
+            <br />
+            <br />
+
+            <img src="./filter_user_list.png">
+            <p>
+                Because the list of users can be quite large, we can use the filter bar to hone in on the user account we 
+                are looking for.
+            </p>
+            <br />
+            <br /> 
+            <img src="./click_inspect_user.png">
+            <p>
+                Once we have located the user account we want to inspect, click the user row. The row will turn orange 
+                showing that the user has been selected. 
+            </p>
+            <p>
+                Finally click the Inspect User button. 
+            </p>
+        </div>
+        <div class="subject" id="inspect_user_by_customer_number">
+            <h2>Inspect User By Customer Number</h2>
+            
+            <img src="./inspect_user_by_number.png">
+            <p>
+                We can inspect a user by their customer number whether or not they currently have a portal account.
+            </p>
+            <p>
+                Simply type the customer number in the input box and either press enter or click inspect user.
+            </p>
+           
+        </div>
+
+        <div class="subject" id="navigating_an_inspected_user">
+            <h2>Navigating An Inspected User</h2>
+            
+            <img src="./customer_user_table.png" />
+            <p>
+                The customer information is divided into four tables. We select a table in order to view it. 
+                The currently selected table is lighter shade of orange than the others. 
+            </p>
+            <p>
+                We have search boxes above the user table that allow us to filter the rows in the selected table 
+                by the values of certain columns.
+            </p>
+            <p>
+                We can click the columns in order to reorder the rows by their value in the clicked column.
+            </p>
+           
+        </div>
+        
+        <div class="subject" id="finding_a_users_certificates">
+            <h2>Finding A User's Certificates</h2>
+            
+            <img src="./certificates_column_on_shippment_history.png" />
+            <p>
+                The certificates associated with an order are to be found on the user's shipment history page. 
+            </p>
+            <p>
+                On this table there will be a column named <strong>Certificates?</strong>. This will be have either 
+                a Yes or No value. Those rows with a Yes value will have certificates attached. We simply click the 
+                row to select it and a list of links to all the certificates associated to that row will pop up.
+            </p>
+           
+        </div>
+        <div class="subject" id="exiting_user_inspection">
+            <h2>Exiting User Inspection</h2>
+            
+            <img src="./clear_inspection.png" />
+            <p>
+                To exit inspection of a user and to return to the admin page, simply click the button 
+                with the text "Clear Inspection".
+            </p>
+
+        </div>
+    </main>
+
+    
+
+</body>
+</html>
